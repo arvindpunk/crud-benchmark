@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  backend:
+    build: backends/${BACKEND}/.
+  
+  # db-wrapper:
+
+  # db:
