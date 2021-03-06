@@ -2,7 +2,9 @@ version: "3.3"
 services:
   backend:
     build: backends/${BACKEND}/.
-  
+    working_dir: /app
+    volumes:
+      - ./backends/${BACKEND}/app:/app
   # db-wrapper:
 
-  # db:
+  # db:exit
