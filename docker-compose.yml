@@ -5,7 +5,7 @@ services:
     working_dir: /app
     command: ${BACKEND_COMMAND}
     volumes:
-      - ./backends/${BACKEND}/app:/app
+      - ./backends/${BACKEND}/src:/app
   db:
     image: mysql
     working_dir: /db

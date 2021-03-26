@@ -13,7 +13,6 @@ We will use a Postman Collection to run a set of REST API calls (CRUD).
 This will contain the same CRUD logic in a variety of languages/frameworks. Following contains a maintained (lexicographically sorted) list of supported languages (you are welcome and encouraged to add more!)
 
 - Node.js (express)
-- Python (flask)
 
 ### Database
 
