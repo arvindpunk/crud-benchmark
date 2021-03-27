@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  backend:
+    image: node
+    working_dir: /app
+    command: npm start
+    volumes:
+      - ./backends/$$(PWD)/app:/app
+    ports:
+      - "2783:3000"

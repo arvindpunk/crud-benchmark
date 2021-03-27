@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  backend:
+    image: python:3
+    working_dir: /app
+    command: python3 index.py
+    volumes:
+      - ./backends/$$(PWD)/app:/app
+    ports:
+      - "2783:3000"

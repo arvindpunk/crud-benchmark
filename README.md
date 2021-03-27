@@ -18,13 +18,13 @@ This will contain the same CRUD logic in a variety of languages/frameworks. Foll
 
 A single MySQL DB instance is chosen for our purpose.
 
-DB name: cruddb  
-Table name: user_info  
+**DB name: cruddb**  
+Table name: `user_info`  
 Schema:  
-user: VARCHAR(255)  
-about: VARCHAR(2047)  
-updated_at: DATETIME (auto-generated, auto-updated)  
-created_at: DATETIME (auto-generated)  
+user: `VARCHAR(255)`  
+about: `VARCHAR(2047)`  
+updated_at: `DATETIME (auto-generated, auto-updated)`  
+created_at: `DATETIME (auto-generated)`  
 
 ### Requirements and Installation
 Docker and docker-compose.
@@ -32,7 +32,7 @@ Docker and docker-compose.
 ## Usage
 
 1. Navigate to root of the project.
-2. Run `docker-compose --env-file backends/node-express/.env up`, replacing `node-express` with the corresponding backend.  
+2. Run `docker compose -f docker-compose.yml -f backends/node-express/docker-compose.dev.yml up`, replacing `node-express` with the corresponding backend.  
 Note: This will set up a development container up and you can make changes to the source, restarting would pick up the new changes.
 3. Exec into the sql container and run `./createDB.sh`. This step won't be required in the future.
 
