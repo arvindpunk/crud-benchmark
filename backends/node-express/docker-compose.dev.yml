@@ -1,10 +1,12 @@
 version: "3.3"
 services:
   backend:
-    image: node
+    image: node:15-alpine
     working_dir: /app
-    command: npm start
+    command: >
+      sh -c "npm install &&
+             npm start"
     volumes:
-      - ./backends/$$(PWD)/app:/app
+      - ./backends/node-express/app:/app
     ports:
-      - "2783:3000"
+      - "${PORT}:3000"

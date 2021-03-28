@@ -32,7 +32,7 @@ Docker and docker-compose.
 ## Usage
 
 1. Navigate to root of the project.
-2. Run `docker compose -f docker-compose.yml -f backends/node-express/docker-compose.dev.yml up`, replacing `node-express` with the corresponding backend.  
+2. Run `docker-compose -f docker-compose.yml -f backends/node-express/docker-compose.dev.yml up`, replacing `node-express` with the corresponding backend.  
 Note: This will set up a development container up and you can make changes to the source, restarting would pick up the new changes.
 3. Exec into the sql container and run `./createDB.sh`. This step won't be required in the future.
 
